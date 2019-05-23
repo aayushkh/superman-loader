@@ -257,16 +257,32 @@ h1:before{
     animation: fadeOut 1s linear 1;
 }
 
-.hoverHero {
-    animation: hoverHero 3s linear 1;
+.transformHero {
+    animation: transformHero 3s linear 1;
 }
 
-@keyframes hoverHero {
+.float {
+	animation: float 4s ease-in-out infinite;
+}
+
+@keyframes float {
+	0% {
+		transform: translatey(0px);
+	}
+	50% {
+		transform: translatey(-20px);
+	}
+	100% {
+		transform: translatey(0px);
+	}
+}
+
+@keyframes transformHero {
     from {}
     to {
         left: 70%;
-        top: 60%;
-        transform: translateX(-30%) translateY(-30%) rotate(-20deg);
+        top: 70%;
+        transform: translateX(-30%) translateY(-30%) rotate(-16deg) scale(1.5);
     }
 }
 

@@ -27,12 +27,13 @@ async function deleteElement (elem, delay) {
     if (delay != 0) {
         await timeout(delay);
     }
-    document.querySelector(elem).style.display = "none";
+    document.querySelector(elem).remove();
 }
 
 async function animateHero () {
-    fadeOutElement(".lines", 0);
-    document.querySelector(".superhero").classList.add("hoverHero");
+    deleteElement(".lines", 0);
+    let classesToAdd = ['transformHero', 'float'];
+    document.querySelector(".superhero").classList.add(...classesToAdd);
 }
 
 async function loadMainPage (elem, delay) {
