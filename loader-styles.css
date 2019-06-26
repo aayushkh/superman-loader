@@ -298,7 +298,7 @@ h1:before{
     35% {opacity:0;}
     50% {opacity:1; content: "Innitiating Hyperspeed"}
     60% {opacity:0;}
-    75% {opacity:1; content: "AK Comics Presents"}
+    75% {opacity:1; content: "42 Comics Presents"}
     85% {opacity:0; font-size:100%;}
     100% {opacity:1; content: "Captain Levi";}
 }
